@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Desafio Condiciones</title>
+</head>
+<body>
+    <div id="index">
+        <button id="ejercicio1" onclick="javascript:hideAndShow('item1')">Ejercicio 1</button>
+        <button id="ejercicio2" onclick="javascript:hideAndShow('item2')">Ejercicio 2</button>
+        <button id="ejercicio3" onclick="javascript:hideAndShow('item3')">Ejercicio 3</button>
+    </div>
+
+    <div id="item1" class="item">
+        <img id="image" src="./assets/imgs/Bishoujo.Senshi.Sailor.Moon.jpg" alt="Sailor Moon" onclick="javascript:hideAndShowBorder();">
+    </div>
+    <div id="item2" class="item">
+        <div id="container2">
+            <div class="sticker">
+                <img src="./assets/imgs/sticker_1.png" alt="Sailor Moon 1">
+                <input id="cantidad1" type="number" name="cantidad1" value="0">
+            </div>
+            <div class="sticker">
+                <img src="./assets/imgs/sticker_2.png" alt="Sailor Moon 2">
+                <input id="cantidad2" type="number" name="cantidad2"  value="0">
+            </div>
+            <div class="sticker">
+                <img src="./assets/imgs/sticker_3.png" alt="Sailor Moon 3">
+                <input id="cantidad3" type="number" name="cantidad3"  value="0">
+            </div>
+            <div></div>
+            <div id="validation">
+                <p id="message">&nbsp;</p>
+                <button id="check" onclick="javascript:checkSum();">Verificar</button>
+            </div>
+        </div>
+    </div>
+    <div id="item3" class="item">
+        <H1>Ingresa el Password</H1>
+        <div id="selects">
+            <select name="num1" id="num1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="num2" id="num2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="num3" id="num3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <button id="ingresar" onclick="javascript:checkPass();">Ingresar</button>
+        <p id="passMensaje"></p>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
